@@ -1,0 +1,464 @@
+html{
+    scroll-behavior: smooth;
+}
+
+@media (min-width: 820px) {
+    body{
+        margin: 0 10rem;
+        background-color: #f7f7f7;
+    }
+    
+    nav{
+        display: flex;
+        justify-content: space-between;
+        border: 2px solid black;
+        border-radius: .5rem;
+        font-family: "Rubik", sans-serif;
+        background-color: white;
+        position: sticky;
+        margin: 3rem;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease-out;
+    }
+
+    nav:hover{
+        transform: scale(1.1);
+    }
+    
+    .logo{
+        height: 3rem;
+    }
+    
+    li{
+        display: inline;
+        padding: .8rem;
+    }
+    
+    nav a{
+        text-decoration: none;
+        color: black;
+        transition: text-decoration 0.3s, font-size 0.3s;
+    }
+
+    a:hover{
+        text-decoration: underline;
+        font-size: 110%;
+    }
+
+    /* Hero Section */
+    .hero{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 75vh;
+        font-family: "Rubik", sans-serif;
+        font-size: 150%;
+        /* background-image: url("hero_background.avif");
+        background-repeat: no-repeat;
+        background-size: cover; */
+    }
+
+    .hero p{
+        text-align: center;
+    }
+
+    .blog-inv{
+        background-color: black;
+        height: 3rem;
+        width: 10rem;
+        margin-right: 2.5rem;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .blog-inv:hover{
+        background-color: #1b1b1b;
+        transform: scale(1.1);
+    }
+
+    .blog-inv a{
+        text-decoration: none;
+        color: white;
+        font-family: "Rubik", sans-serif;
+    }
+
+    /* Sbort About */
+    .short-about {
+        padding: 5rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        font-family: "Rubik", sans-serif;
+        align-items: center;
+        box-shadow: 2px 2px 5px rgba(0.3, 0.3, 0.3, 0.3);
+    }
+
+    .pic{
+        height: 20rem;
+        width: 20rem;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+
+    .pic img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .short-about p{
+        padding-top: 4rem;
+        font-size: 125%;
+        line-height: 140%;
+    }
+
+    /* Skills */
+    .skills{
+        text-align: center;
+        font-family: "Rubik", sans-serif;
+        padding: 7rem;
+    }
+
+    .skills h1{
+        font-size: 2rem;
+        padding: 3rem;
+    }
+
+    .tech-stack{
+        display: flex;
+        gap: 3rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    /* .prog-langs{
+        display: flex;
+        padding: 3rem;
+        justify-content: space-evenly;
+        height: 7rem;
+    }
+
+    .front-end{
+        display: flex;
+        padding: 3rem;
+        height: 7rem;
+        justify-content: space-evenly;
+    }
+
+    .back-end{
+        display: flex;
+        padding: 3rem;
+        height: 7rem;
+        justify-content: space-evenly;
+    } */
+    .skills img{
+        height: 5rem;
+    }
+
+    /* contact */
+    .contact{
+        font-family: "Rubik", sans-serif;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 5rem;
+        gap: 2rem;
+    }
+
+    .contact h1{
+        font-size: 2rem;
+    }
+
+    .contact-info{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .contact-info img{
+        height: 3rem;
+    }
+
+    .contact-bundle{
+        margin: 1.5rem;
+        transition: transform 0.3s;
+    }
+
+    .contact-bundle:hover{
+        transform: scale(1.3);
+    }
+
+    /* Footer */
+    footer{
+        font-family: "Rubik", sans-serif;
+        display: flex;
+        margin-left: -10rem;
+        margin-right: -10rem;
+        background-color: black;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4rem;
+    }
+
+    footer a{
+        color: white;
+        text-decoration: none;
+        transition: text-decoration 0.3s, font-size 0.3s;
+    }
+
+    .link-box{
+        display: flex;
+        gap: 1rem;
+    }
+
+    .soc-links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .soc-links img{
+        height: 4rem;
+        width: 4rem;
+        border-radius: 50%;
+    }
+
+    .link-box img{
+        height: 2rem;
+    }
+
+    .name{
+        color: white;
+    }
+
+    hr{
+        width: 100%;
+        border-radius: 5rem;
+    }
+}
+
+@media (max-width: 819px)  {
+    body{
+        margin: 0 auto;
+        background-color: #f7f7f7;
+    }
+    
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid black;
+        border-radius: .5rem;
+        font-family: "Rubik", sans-serif;
+        background-color: white;
+        position: sticky;
+        margin: 3rem;
+        flex-wrap: wrap;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease-out;
+    }
+    
+    nav:hover{
+        transform: scale(1.1);
+    }
+    
+    .logo{
+        height: 3rem;
+    }
+    
+    li{
+        display: inline;
+        padding: .8rem;
+    }
+    
+    nav a{
+        text-decoration: none;
+        color: black;
+        transition: text-decoration 0.3s, font-size 0.3s;
+    }
+    
+    a:hover{
+        text-decoration: underline;
+        font-size: 110%;
+    }
+    
+    /* Hero Section */
+    .hero{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 75vh;
+        font-family: "Rubik", sans-serif;
+        font-size: 150%;
+        /* background-image: url("hero_background.avif");
+        background-repeat: no-repeat;
+        background-size: cover; */
+    }
+
+    .hero h1{
+        text-align: center;
+        padding: .5rem;
+    }
+    
+    .hero p{
+        text-align: center;
+        padding: 1rem;
+    }
+    
+    .blog-inv{
+        background-color: black;
+        height: 3rem;
+        width: 10rem;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+    
+    .blog-inv:hover{
+        background-color: #1b1b1b;
+        transform: scale(1.1);
+    }
+    
+    .blog-inv a{
+        text-decoration: none;
+        color: white;
+        font-family: "Rubik", sans-serif;
+    }
+    
+    /* Sbort About */
+    .short-about {
+        padding: 5rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        font-family: "Rubik", sans-serif;
+        align-items: center;
+        box-shadow: 2px 2px 5px rgba(0.3, 0.3, 0.3, 0.3);
+    }
+    
+    .pic{
+        max-width: 20rem;
+        max-height: 20rem;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+    
+    .pic img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .short-about p{
+        padding-top: 4rem;
+    }
+    
+    /* Skills */
+    .skills{
+        text-align: center;
+        font-family: "Rubik", sans-serif;
+    }
+    
+    .skills h1{
+        font-size: 2rem;
+        padding: 3rem;
+    }
+    
+    .tech-stack{
+        display: flex;
+        gap: 3rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .skills img{
+        height: 5rem;
+    }
+    
+    /* contact */
+    .contact{
+        font-family: "Rubik", sans-serif;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 5rem;
+        gap: 2rem;
+    }
+    
+    .contact h1{
+        font-size: 2rem;
+    }
+    
+    .contact-info{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .contact-info img{
+        height: 3rem;
+    }
+    
+    .contact-bundle{
+        margin: 1.5rem;
+        transition: transform 0.3s;
+    }
+    
+    .contact-bundle:hover{
+        transform: scale(1.3);
+    }
+    
+    /* Footer */
+    footer{
+        font-family: "Rubik", sans-serif;
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    footer a{
+        color: white;
+        text-decoration: none;
+        transition: text-decoration 0.3s, font-size 0.3s;
+    }
+    
+    .link-box{
+        display: flex;
+        gap: 1rem;
+    }
+    
+    .soc-links{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .soc-links img{
+        max-width: 4rem;
+        max-height: 4rem;
+        border-radius: 50%;
+    }
+    
+    .nav a{
+        font-size: 1.25rem
+    }
+    
+    .link-box img{
+        height: 2rem;
+    }
+    
+    .name{
+        color: white;
+    }
+    
+    hr{
+        max-width: 80%;
+    }
+}
