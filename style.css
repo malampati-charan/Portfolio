@@ -264,12 +264,12 @@ html{
     }
     
     .logo{
-        height: 3rem;
+        max-height: 3rem;
     }
     
     li{
         display: inline;
-        padding: .8rem;
+        margin: .2rem;
     }
     
     nav a{
@@ -280,7 +280,6 @@ html{
     
     a:hover{
         text-decoration: underline;
-        font-size: 110%;
     }
     
     /* Hero Section */
@@ -328,7 +327,6 @@ html{
     /* Sbort About */
     .short-about {
         padding: 5rem;
-        text-align: center;
         display: flex;
         flex-direction: column;
         background-color: white;
@@ -340,14 +338,12 @@ html{
     .pic{
         max-width: 20rem;
         max-height: 20rem;
-        overflow: hidden;
         border-radius: 50%;
     }
     
     .pic img{
         width: 100%;
         height: 100%;
-        object-fit: cover;
     }
     
     .short-about p{
@@ -413,14 +409,11 @@ html{
     footer{
         font-family: "Rubik", sans-serif;
         display: flex;
-        flex-direction: column;
         background-color: black;
-        justify-content: space-between;
         align-items: center;
+        justify-content: center;
         padding-top: 3rem;
         padding-bottom: 3rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
     }
     
     footer a{
@@ -429,29 +422,15 @@ html{
         transition: text-decoration 0.3s, font-size 0.3s;
     }
     
-    .link-box{
-        display: flex;
-        gap: 1rem;
-    }
-    
     .soc-links{
         display: none;
         flex-direction: column;
         align-items: center;
     }
     
-    .soc-links img{
-        max-width: 4rem;
-        max-height: 4rem;
-        border-radius: 50%;
-    }
-    
     .nav a{
-        font-size: 1.25rem
-    }
-    
-    .link-box img{
-        height: 2rem;
+        display: flex;
+        font-size: 1.25rem;
     }
     
     .name{
