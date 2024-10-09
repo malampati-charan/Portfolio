@@ -347,6 +347,7 @@ html{
     }
     
     .short-about p{
+        margin: 1rem;
         padding-top: 4rem;
     }
     
